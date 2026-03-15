@@ -2,7 +2,7 @@ package _001;
 
 // 26.03.16
 // 백준 11382
-// A+B+C를 출력
+// A+B+C를 출력 (1 ≤ A, B, C ≤ 10^12)
 
 import java.io.BufferedReader;
 import java.io.IOException;
