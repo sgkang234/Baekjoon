@@ -1,7 +1,7 @@
 package _001;
 
 // 26.03.16
-// 백준 18108번
+// 백준 10430번
 // (A+B)%C는 ((A%C) + (B%C))%C, (A×B)%C는 ((A%C) × (B%C))%C 단 (2 ≤ A, B, C ≤ 10000) 이다. 이것이 같은 값인지 코드로 확인
 
 import java.io.BufferedReader;
