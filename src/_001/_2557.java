@@ -8,7 +8,7 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 
-public class _001 {
+public class _2557 {
     public static void main(String[] args) throws IOException {
 
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
