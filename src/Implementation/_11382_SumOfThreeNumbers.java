@@ -1,14 +1,14 @@
-package _001;
+package Implementation;
 
 // 26.03.16
 // 백준 11382
-// A+B+C를 출력 (1 ≤ A, B, C ≤ 10^12)
+// A+B+C를 출력 (1 ≤ A, B, C ≤ 10^12) 하는 프로그램
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class _010 {
+public class _11382_SumOfThreeNumbers {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String[] input = br.readLine().split(" ");
