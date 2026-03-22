@@ -1,4 +1,4 @@
-package _001;
+package Implementation;
 
 // 26.03.16
 // 백준 2588
@@ -8,7 +8,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class _009 {
+public class _2588_Multiplication {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int a = Integer.parseInt(br.readLine());
