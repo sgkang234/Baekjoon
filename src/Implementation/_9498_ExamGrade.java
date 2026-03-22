@@ -1,4 +1,4 @@
-package _001;
+package Implementation;
 
 // 26.03.17
 // 백준 9498
@@ -8,7 +8,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class _014 {
+public class _9498_ExamGrade {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int score = Integer.parseInt(br.readLine());
