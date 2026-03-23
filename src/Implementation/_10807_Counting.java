@@ -1,4 +1,4 @@
-package _001;
+package Implementation;
 
 // 26.03.23
 // 백준 10807번
@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class _10807 {
+public class _10807_Counting {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
