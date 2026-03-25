@@ -11,8 +11,8 @@ import java.io.OutputStreamWriter;
 public class _2557_HelloWorld {
     public static void main(String[] args) throws IOException {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        bw.write("Hello World!");
-        bw.flush();
+        bw.write("Hello World!"); // "Hello World!" 문자열을 버퍼에 작성
+        bw.flush(); // 버퍼에 쌓인 데이터를 실제로 출력 (비워주기)
         bw.close();
     }
 }
