@@ -2,7 +2,7 @@ package Implementation;
 
 // 26.03.23
 // 백준 10952
-// 정수 A, B를 입력받아 A+B를 출력하는 프로그램
+// 정수 A, B를 입력받아 A와 B가 모두 0이 아닐 때까지 A+B를 출력하는 프로그램
 
 import java.io.BufferedReader;
 import java.io.IOException;
