@@ -1,4 +1,4 @@
-package _001;
+package Implementation;
 
 // 26.03.26
 // 백준 11654
