@@ -2,7 +2,7 @@ package String;
 
 // 26.03.29
 // 백준 10988
-// 팰린드롬인지 확인하는 프로그램
+// 팰린드롬인지 아닌지 확인하는 프로그램
 
 import java.util.Scanner;
 
