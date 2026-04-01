@@ -1,7 +1,7 @@
 package implementation;
 
 // 26.03.11
-// 백준 2557번
+// 백준 2557
 // "Hello World!" 출력하는 프로그램
 
 /*
