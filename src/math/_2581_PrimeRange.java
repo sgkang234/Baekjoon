@@ -1,9 +1,18 @@
-package Math;
-
+package math;
 
 // 26.04.01
 // 백준 2581
 // 자연수 M과 N이 주어질 때 M이상 N이하의 자연수 중 소수인 것을 모두 골라 이들 소수의 합과 최솟값을 찾는 프로그램
+
+/*
+[입력]
+60
+100
+
+[출력]
+620
+61
+*/
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,9 +20,12 @@ import java.io.InputStreamReader;
 
 public class _2581_PrimeRange {
     public static void main(String[] args) throws IOException {
+        // 입력
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int first = Integer.parseInt(br.readLine());
         int second = Integer.parseInt(br.readLine());
+
+        // 로직 및 출력
         int sum = 0;
         int min = Integer.MAX_VALUE ;
         for (int i = first; i <= second ; i++) {
