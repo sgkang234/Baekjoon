@@ -1,16 +1,36 @@
-package Implementation;
+package implementation;
 
 // 26.03.29
 // 백준 2444
 // 이중 별 만들기
 
-import java.util.Scanner;
+/*
+[입력]
+5
+
+[출력]
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
+*/
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class _2444_PrintStars7 {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int star = scanner.nextInt();
+    public static void main(String[] args) throws IOException {
+        // 입력
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int star = Integer.parseInt(br.readLine());
 
+        // 로직 및 출력
         for (int i = 0; i < star ; i++) {
             for (int j = 0; j < star-(i+1); j++) {
                 System.out.print(" ");
