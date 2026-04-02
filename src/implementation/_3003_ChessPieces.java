@@ -1,10 +1,18 @@
-package Implementation;
+package implementation;
 
 // 26.03.28
 // 백준 3003
 /*
 체스는 총 16개의 피스를 사용하며, 킹 1개, 퀸 1개, 룩 2개, 비숍 2개, 나이트 2개, 폰 8개로 구성되어 있다.
 사용자가 랜덤한 체스의 양을 입력했을 때, 몇 개를 더하거나 빼야 올바른 세트가 되는지 구하는 프로그램
+*/
+
+/*
+[입력]
+0 1 2 2 2 7
+
+[출력]
+1 0 0 0 0 1
 */
 
 import java.io.BufferedReader;
@@ -14,10 +22,12 @@ import java.util.StringTokenizer;
 
 public class _3003_ChessPieces {
     public static void main(String[] args) throws IOException {
+        // 입력
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
-        StringBuilder sb = new StringBuilder();
 
+        // 로직
+        StringBuilder sb = new StringBuilder();
         // 체스의 구성
         int[] pieces = {1, 1, 2, 2, 2, 8};
 
@@ -27,6 +37,7 @@ public class _3003_ChessPieces {
             sb.append(pieces[i] - piece)
                     .append(" ");
         }
+        // 출력
         System.out.println(sb);
     }
 }
