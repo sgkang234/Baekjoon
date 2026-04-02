@@ -30,7 +30,7 @@ public class _10810_PutBalls {
         int m = Integer.parseInt(st.nextToken());
 
         // 로직
-        int[] baskets = new int[n + 1];
+        int[] baskets = new int[n + 1]; // 1번부터 쓰기 위해 +1
 
         for (int row = 0; row < m; row++) {
             st = new StringTokenizer(br.readLine());
@@ -38,6 +38,7 @@ public class _10810_PutBalls {
             int j = Integer.parseInt(st.nextToken());
             int k = Integer.parseInt(st.nextToken());
 
+            // 덮어쓰는 반복문
             for (int index = i; index <= j; index++) {
                 baskets[index] = k;
             }
