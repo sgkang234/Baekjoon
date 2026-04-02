@@ -1,4 +1,4 @@
-package Implementation;
+package implementation;
 
 // 26.03.28
 // 백준 5622
