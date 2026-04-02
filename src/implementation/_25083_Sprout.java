@@ -4,6 +4,18 @@ package implementation;
 // 백준 5622
 // 새싹 출력하는 프로그램
 
+/*
+[입력]
+
+[출력]
+         ,r'"7
+r`-_   ,'  ,/
+ \. ". L_r'
+   `~\/
+      |
+      |
+*/
+
 public class _25083_Sprout {
     public static void main(String[] args) {
         System.out.println("         ,r'\"7");
