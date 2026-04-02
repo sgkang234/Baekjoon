@@ -1,4 +1,4 @@
-package Implementation;
+package implementation;
 
 // 26.03.25
 // 백준 10813
@@ -9,6 +9,18 @@ package Implementation;
 공을 어떻게 바꿀지가 주어졌을 때, M번 공을 바꾼 이후에 각 바구니에 어떤 공이 들어있는지 구하는 프로그램
 */
 
+/*
+[입력]
+5 4
+1 2
+3 4
+1 4
+2 2
+
+[출력]
+3 1 4 2 5
+*/
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -16,17 +28,18 @@ import java.util.StringTokenizer;
 
 public class _10813_SwapBalls {
     public static void main(String[] args) throws IOException {
+        // 입력
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
         int n = Integer.parseInt(st.nextToken()); // 바구니 수
         int m = Integer.parseInt(st.nextToken()); // 바구니 안에 공을 바꾸는 수
-        int[] arr = new int[n]; // 바구니
 
+        // 로직
+        int[] arr = new int[n]; // 바구니
         // 초기 바구니 공 세팅
         for (int i = 0; i <n ; i++) {
             arr[i] =i+1;
         }
-
         // 공 교환
         for (int i = 0; i < m; i++) {
             st = new StringTokenizer(br.readLine());
@@ -42,6 +55,8 @@ public class _10813_SwapBalls {
         for (int x : arr) {
             sb.append(x).append(" ");
         }
+
+        // 출력
         System.out.println(sb);
     }
 }
