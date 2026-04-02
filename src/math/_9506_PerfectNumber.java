@@ -1,8 +1,21 @@
-package Math;
+package math;
 
 // 26.04.01
 // 백준 9506
-// n이 완전수인지 아닌지 판단해주는 프로그램
+// n이 완전수인지 아닌지 판단하는 프로그램
+
+/*
+[입력]
+6
+12
+28
+-1
+
+[출력]
+6 = 1 + 2 + 3
+12 is NOT perfect.
+28 = 1 + 2 + 4 + 7 + 14
+*/
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,8 +23,11 @@ import java.io.InputStreamReader;
 
 public class _9506_PerfectNumber {
     public static void main(String[] args) throws IOException {
+        // 입력
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
+
+        // 로직
         while (true) {
             int num = Integer.parseInt(br.readLine());
             int sum = 0;
@@ -42,6 +58,8 @@ public class _9506_PerfectNumber {
                         .append("\n");
             }
         }
+
+        // 출력
         System.out.print(sb);
     }
 }
