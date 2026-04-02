@@ -1,15 +1,28 @@
-package String;
+package strings;
 
 // 26.03.29
 // 백준 10988
 // 팰린드롬인지 아닌지 확인하는 프로그램
 
-import java.util.Scanner;
+/*
+[입력]
+level
+
+[출력]
+1
+*/
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class _10988_Palindrome {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String s = scanner.nextLine().trim();
+    public static void main(String[] args) throws IOException {
+        // 입력
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String s = br.readLine().trim();
+
+        // 로직
         // 양쪽에서부터 같은 단어인지 확인하는 반복문
         for (int i = 0; i <s.length()/2; i++) {
             char c1 = s.charAt(i);
@@ -19,6 +32,8 @@ public class _10988_Palindrome {
                 System.exit(0); // 만약 같지 않다면 즉시 종료한다.
             }
         }
+
+        // 출력
         System.out.println(1);
     }
 }
