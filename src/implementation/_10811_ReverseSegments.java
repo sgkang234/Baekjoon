@@ -1,4 +1,4 @@
-package Implementation;
+package implementation;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,15 +13,31 @@ import java.util.StringTokenizer;
 앞으로 M번 바구니의 순서를 역순으로 만들려고 한다. 한 번 순서를 역순으로 바꿀 때, 순서를 역순으로 만들 범위를 정하고, 그 범위에 들어있는 바구니의 순서를 역순으로 만든다.
 바구니의 순서를 어떻게 바꿀지 주어졌을 때, M번 바구니의 순서를 역순으로 만든 다음, 바구니에 적혀있는 번호를 가장 왼쪽 바구니부터 출력하는 프로그램.
  */
+
+/*
+[입력]
+5 4
+1 2
+3 4
+1 4
+2 2
+
+[출력]
+3 4 1 2 5
+*/
+
+
 public class _10811_ReverseSegments {
     public static void main(String[] args) throws IOException {
+        // 출력
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
         int n = Integer.parseInt(st.nextToken()); //바구니 수
         int m = Integer.parseInt(st.nextToken()); // 교체할 바구니 수
 
+        // 로직
         int[] arr= new int[n];
-
+        // 바구니의 번호 순서대로 넣는 반복문
         for (int i = 0; i < n; i++) {
             arr[i] = i+1;
         }
@@ -44,6 +60,8 @@ public class _10811_ReverseSegments {
         for (int x : arr) {
             sb.append(x).append(" ");
         }
+
+        // 출력
         System.out.println(sb);
     }
 }
