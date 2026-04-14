@@ -21,39 +21,31 @@ import java.util.Arrays;
 
 public class _4673_SelfNumber {
     public static void main(String[] args) {
-        // 입력
         int max = 10000;
-        Boolean[] arr = new Boolean[max+1];
+        boolean[] arr = new boolean[max + 1];
         Arrays.fill(arr, true);
-        arr[0] = false;
-        int num = 1;
-        int sum = 1;
-        int count = 1;
 
-        // 로직
-        while (count != 10000){
+        for (int i = 1; i <= max; i++) {
+            int sum = i;
+            int num = i;
+
             while (num != 0) {
                 sum += num % 10;
                 num /= 10;
             }
-            if(sum > 10000){
-                count++;
-                num = count;
-                sum = count;
-            } else {
+
+            if (sum <= max) {
                 arr[sum] = false;
-                num = sum;
             }
         }
 
-        // 출력
         StringBuilder sb = new StringBuilder();
-        for (int i = 1; i <= max ; i++) {
-            if(arr[i]){
-                sb.append(i)
-                        .append("\n");
+        for (int i = 1; i <= max; i++) {
+            if (arr[i]) {
+                sb.append(i).append("\n");
             }
         }
+
         System.out.println(sb);
     }
 }
